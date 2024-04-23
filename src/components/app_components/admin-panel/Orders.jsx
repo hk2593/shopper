@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
-import PendingStatus from './PendingStatus';
-import CompletedStatus from './CompletedStatus';
+import PendingStatus from '../PendingStatus';
+import CompletedStatus from '../CompletedStatus';
 
 const Orders = () => {
     const [activeButton, setActiveButton] = useState('Pending');
