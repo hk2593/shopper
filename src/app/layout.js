@@ -5,6 +5,7 @@ import Navbar from "@/components/app_components/navbar";
 import { Provider } from 'react-redux';
 import { store, persistor } from '@/store/store';  
 import { PersistGate } from 'redux-persist/integration/react';
+import Footer from "@/components/app_components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
             <PersistGate loading={null} persistor={persistor}>
             <Navbar />
             {children}
+            <Footer></Footer>
             </PersistGate>
       </Provider> 
       </body>
